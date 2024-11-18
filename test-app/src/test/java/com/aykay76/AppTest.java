@@ -1,10 +1,17 @@
-package com.aykay76.lib;
+package com.aykay76.app;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-public class LibTest {
+/**
+ * Unit test for simple App.
+ */
+public class AppTest {
+
+    /**
+     * Rigorous Test :-)
+     */
     @Test
     public void shouldAnswerWithTrue() {
         assertTrue(true);

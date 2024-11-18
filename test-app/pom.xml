@@ -3,11 +3,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.aykay76.lib</groupId>
-  <artifactId>test-lib</artifactId>
+  <groupId>com.aykay76.app</groupId>
+  <artifactId>test-app</artifactId>
   <version>1.0-SNAPSHOT</version>
-
-  <name>test-lib</name>
+  <name>test-app</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -27,7 +26,7 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-
+  
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -39,6 +38,13 @@
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>com.aykay76.lib</groupId>
+        <artifactId>test-lib</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <scope>compile</scope>
     </dependency>
   </dependencies>
 
@@ -94,13 +100,4 @@
       </plugins>
     </pluginManagement>
   </build>
-
-  <distributionManagement>
-    <repository>
-        <id>github-maven</id>
-        <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/aykay76/java/test-lib</url>
-    </repository>
-  </distributionManagement>
-
 </project>
